@@ -80,10 +80,9 @@ function getResults(input) {
 }
 
 function showAnswer(playerWon) {
-    $('#code')
-    .html(answer.val())
-    .removeClass((playerWon ? ' failure' : ' success'))
-    .addClass((playerWon ? ' success' : ' failure'));
+    code = $('#code')
+    .html(answer.val())[0];
+    code.className = playerWon ? 'code success' : 'code failure';
 }
 
 function showReplay () {
