@@ -82,8 +82,8 @@ function getResults(input) {
 function showAnswer(playerWon) {
     $('#code')
     .html(answer.val())
-    .removeClass((playerWon ? 'failure' : 'success'))
-    .addClass((playerWon ? 'success' : 'failure'));
+    .removeClass((playerWon ? ' failure' : ' success'))
+    .addClass((playerWon ? ' success' : ' failure'));
 }
 
 function showReplay () {
